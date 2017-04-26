@@ -29,8 +29,9 @@ $app-light-grey: #e1eeee;
 	border: none;
 	border: 2px solid $app-green;
 	border-radius: 4px;
-	padding: 15px;
+	padding: 10px 15px;
 	outline: none;
+	margin-top: 10px;
 }
 
 .outline-button {
@@ -39,8 +40,10 @@ $app-light-grey: #e1eeee;
 	border: none;
 	border: 2px solid white;
 	border-radius: 4px;
-	padding: 15px;
+	padding: 10px 15px;
 	outline: none;
+	margin-top: 10px;
+	margin-left: 15px;
 }
 
 .section-container {
@@ -48,6 +51,43 @@ $app-light-grey: #e1eeee;
 	margin: 0 auto;
 }
 
+
+.col-xs-for5,
+.col-sm-for5,
+.col-md-for5,
+.col-lg-for5 {
+	padding-right: 10px;
+    padding-left: 10px;
+    position: relative;
+    min-height: 1px;
+
+}
+
+.col-xs-for5 {
+    width: 50%;
+    float: left;
+}
+
+@media (min-width: 768px) {
+.col-sm-for5 {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-for5 {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-for5 {
+        width: 20%;
+        float: left;
+    }
+}
 
 ////////////////////////////////////////////////////////
 // navigation bar
@@ -67,7 +107,7 @@ $app-light-grey: #e1eeee;
 }
 
 .jumbo-inner-container {
-	max-width: 700px;
+	max-width: 610px;
 
 	.row {
 		margin-top: 75px;
@@ -90,8 +130,8 @@ $app-light-grey: #e1eeee;
 ////////////////////////////////////////////////////////
 
 .boxes {
-	width: 75px;
-	height: 75px;
+	width: 50px;
+	height: 50px;
 	display: inline-block;
 	margin-right: 20px;
 
@@ -138,13 +178,42 @@ $app-light-grey: #e1eeee;
 ////////////////////////////////////////////////////////
 
 .jumbo-background-bottom {
-    height: 500px;
-    margin-top: -20px;
-    background-image: (linear-gradient(90deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/hero-image-2.png));
+	margin: 0 auto;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/hero-image-2.png);
     background-repeat: no-repeat;
     background-size: 100%;
-   	background-position: 0% 0%;
-	position: relative;
+    background-position: 0% 0%;
+    position: relative;
+    background-size: 100% auto;
+    height: 30vw;
+    max-height: 500px;
+    overflow: hidden;
+    text-align: center;
+
+    .content-container {
+
+    	text-align: center;
+    	padding-top: 50px;
+
+	    .connect-header {
+	    	color: $app-light-grey;
+	    	font-size: 30px;
+	    	font-weight: bold;
+	    }
+
+	    .connect-subheader {
+	    	color: $app-light-grey;
+	    	font-size: 15px;
+	    }
+
+	    .connect-line {
+	    	width: 50px;
+	    	border: none;
+	    	padding-bottom: 1px;
+	    	background-color: rgba(255, 255, 255, .4);
+	    }
+	}
+
 }
 
 ////////////////////////////////////////////////////////
@@ -156,3 +225,12 @@ $app-light-grey: #e1eeee;
 ////////////////////////////////////////////////////////
 // footer section
 ////////////////////////////////////////////////////////
+
+.footer-container {
+	padding: 25px 0px;
+	background-color: $app-light-grey;
+	border-top: 1px solid $app-grey;
+}
+
+
+
