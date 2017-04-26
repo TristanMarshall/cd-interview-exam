@@ -1,9 +1,6 @@
-// FONT SYSTEM
-
-
-
-
-
+////////////////////////////////////////////////////////
+// fonts
+////////////////////////////////////////////////////////
 
 $testvariable: #f7f7f7;
 
@@ -11,12 +8,56 @@ body {
 	background-color: $testvariable;
 }
 
+////////////////////////////////////////////////////////
+// app theme colors
+////////////////////////////////////////////////////////
+$app-dark-blue: #013a60;
+$app-green: #00b151;
+$app-orange: #ff8c00;
+$app-blue: #008bd3;
+$app-dark-grey: #4e565c;
+$app-grey: #95a2aa;
+$app-light-grey: #e1eeee;
 
-// navbar scss
+////////////////////////////////////////////////////////
+// app common element classes
+////////////////////////////////////////////////////////
 
-// jumbo image css
+.solid-button {
+	background-color: $app-green;
+	color: white;
+	border: none;
+	border: 2px solid $app-green;
+	border-radius: 4px;
+	padding: 15px;
+	outline: none;
+}
 
-.jumbo-container {
+.outline-button {
+	background-color: transparent;
+	color: white;
+	border: none;
+	border: 2px solid white;
+	border-radius: 4px;
+	padding: 15px;
+	outline: none;
+}
+
+.section-container {
+	max-width: 740px;
+	margin: 0 auto;
+}
+
+
+////////////////////////////////////////////////////////
+// navigation bar
+////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////
+// jumbo section
+////////////////////////////////////////////////////////
+
+.jumbo-background {
     height: 250px;
     margin-top: -20px;
     background-image: (linear-gradient(90deg, rgba(7, 40, 65, 0.75), rgba(7, 40, 65, 0.75)), url(../images/hero-image.png));
@@ -25,13 +66,93 @@ body {
 	position: relative;
 }
 
+.jumbo-inner-container {
+	max-width: 700px;
 
-.test-container {
-	max-width: 500px;
-	background-color: #aeaeae;
+	.row {
+		margin-top: 75px;
+		.jumbo-header {
+			color: $app-light-grey;
+			font-size: 35px;
+			font-weight: bold;
+		}
 
-	.text-box {
-		background-color: #f7f7f7;
+		.jumbo-subheader {
+			color: $app-light-grey;
+			font-size: 16px;
+		}
+	}
 
+}
+
+////////////////////////////////////////////////////////
+// colored boxes / down-sizing text section
+////////////////////////////////////////////////////////
+
+.boxes {
+	width: 75px;
+	height: 75px;
+	display: inline-block;
+	margin-right: 20px;
+
+	&.darkblue { background-color: $app-dark-blue}
+	&.green { background-color: $app-green}
+	&.orange { background-color: $app-orange}
+	&.blue { background-color: $app-blue}
+	&.darkgrey { background-color: $app-dark-grey}
+	&.grey { background-color: $app-grey}
+	&.lightgrey { background-color: $app-light-grey}
+}
+
+.loop-container {
+
+	.loop-class {
+		font-size: 30px;
+		&.one {font-size: 26px;}
+		&.two {font-size: 22px;}
+		&.three {font-size: 18px;}
+		&.four {font-size: 16px;}
+		&.five {font-size: 12px;}
+	}
+
+	.second-class {
+		font-size: 20px;
+		&.one {font-size: 16px;}
+		&.two {font-size: 12px;}
+		&.three {font-size: 8px;}
+		&.four {font-size: 4px;}
+		&.five {font-size: 2px;}
 	}
 }
+
+
+////////////////////////////////////////////////////////
+// text section
+////////////////////////////////////////////////////////
+
+
+
+
+////////////////////////////////////////////////////////
+// second jumbo section
+////////////////////////////////////////////////////////
+
+.jumbo-background-bottom {
+    height: 500px;
+    margin-top: -20px;
+    background-image: (linear-gradient(90deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/hero-image-2.png));
+    background-repeat: no-repeat;
+    background-size: 100%;
+   	background-position: 0% 0%;
+	position: relative;
+}
+
+////////////////////////////////////////////////////////
+// three part icon section
+////////////////////////////////////////////////////////
+
+
+
+////////////////////////////////////////////////////////
+// footer section
+////////////////////////////////////////////////////////

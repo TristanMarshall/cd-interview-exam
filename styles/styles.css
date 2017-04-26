@@ -1,7 +1,29 @@
 body {
   background-color: #f7f7f7; }
 
-.jumbo-container {
+.solid-button {
+  background-color: #00b151;
+  color: white;
+  border: none;
+  border: 2px solid #00b151;
+  border-radius: 4px;
+  padding: 15px;
+  outline: none; }
+
+.outline-button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  border: 2px solid white;
+  border-radius: 4px;
+  padding: 15px;
+  outline: none; }
+
+.section-container {
+  max-width: 740px;
+  margin: 0 auto; }
+
+.jumbo-background {
   height: 250px;
   margin-top: -20px;
   background-image: linear-gradient(90deg, rgba(7, 40, 65, 0.75), rgba(7, 40, 65, 0.75)), url(../images/hero-image.png);
@@ -9,10 +31,70 @@ body {
   background-position: 0% 0%;
   position: relative; }
 
-.test-container {
-  max-width: 500px;
-  background-color: #aeaeae; }
-  .test-container .text-box {
-    background-color: #f7f7f7; }
+.jumbo-inner-container {
+  max-width: 700px; }
+  .jumbo-inner-container .row {
+    margin-top: 75px; }
+    .jumbo-inner-container .row .jumbo-header {
+      color: #e1eeee;
+      font-size: 35px;
+      font-weight: bold; }
+    .jumbo-inner-container .row .jumbo-subheader {
+      color: #e1eeee;
+      font-size: 16px; }
+
+.boxes {
+  width: 75px;
+  height: 75px;
+  display: inline-block;
+  margin-right: 20px; }
+  .boxes.darkblue {
+    background-color: #013a60; }
+  .boxes.green {
+    background-color: #00b151; }
+  .boxes.orange {
+    background-color: #ff8c00; }
+  .boxes.blue {
+    background-color: #008bd3; }
+  .boxes.darkgrey {
+    background-color: #4e565c; }
+  .boxes.grey {
+    background-color: #95a2aa; }
+  .boxes.lightgrey {
+    background-color: #e1eeee; }
+
+.loop-container .loop-class {
+  font-size: 30px; }
+  .loop-container .loop-class.one {
+    font-size: 26px; }
+  .loop-container .loop-class.two {
+    font-size: 22px; }
+  .loop-container .loop-class.three {
+    font-size: 18px; }
+  .loop-container .loop-class.four {
+    font-size: 16px; }
+  .loop-container .loop-class.five {
+    font-size: 12px; }
+.loop-container .second-class {
+  font-size: 20px; }
+  .loop-container .second-class.one {
+    font-size: 16px; }
+  .loop-container .second-class.two {
+    font-size: 12px; }
+  .loop-container .second-class.three {
+    font-size: 8px; }
+  .loop-container .second-class.four {
+    font-size: 4px; }
+  .loop-container .second-class.five {
+    font-size: 2px; }
+
+.jumbo-background-bottom {
+  height: 500px;
+  margin-top: -20px;
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/hero-image-2.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0% 0%;
+  position: relative; }
 
 /*# sourceMappingURL=styles.css.map */
