@@ -1,4 +1,6 @@
 $(document).ready(function(){
+	$( "#expander" ).hide();
+	$( "#searchbox" ).hide();
 
 	// set string variable for loop
 	var looptext = "One Morning, When Gregor Samsa Woke";
@@ -37,5 +39,27 @@ $(document).ready(function(){
 
 		// Change string variable for loop with 0 index
 		$(".loop-class")[0].innerHTML = "One Morning, When Gregor Samsa";
+
+		// Toggle expanding menu
+		$('#expandMenu').click(function(){
+			$('#expander').removeClass('hidden');
+		   $( "#expander" ).fadeToggle( "slow", function() {
+  		});
+		});
+
+		// Toggle search box
+		$('#searching').click(function(){
+			$('#searchinput').val('');
+			$('#searchbox').removeClass('hidden');
+		   $("#searchbox").fadeToggle( "slow", function() {
+  		});
+		});
+
+		// Toggle search box from X
+		$("#closesearch").click(function() {
+			$('#searchinput').val('');
+			$("#searchbox").fadeToggle( "slow", function() {
+			});
+		});
 
 });

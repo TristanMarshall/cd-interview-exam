@@ -9,11 +9,20 @@
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
-
   <body>
+
+    <div id="searchbox" class="hidden">
+      <input id="searchinput" placeholder="Search by topic or keyword and hit enter">
+      <div id="closesearch" class="icon-clear"></div>
+    </div>
+
+    <div id="overlay" class="hidden">
+      <input id="searchinput" placeholder="Search by topic or keyword and hit enter">
+      <div id="closesearch" class="icon-clear"></div>
+    </div>
+
     <nav class="navbar navbar-default">
       <div class="container-fluid nav-styles">
-
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
@@ -27,14 +36,10 @@
     	      </a>
         	</div>
         </div>
-
-
         <div class="collapse navbar-collapse" id="navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle border-left" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></span>Browse</a>
-              <div class="dropdown-menu" style="width: 100%; height: 200px; background-color: red;">
-              </div>
+            <li class="dropdown" id="expandMenu">
+              <a href="#" class="dropdown-toggle border-left icon-menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></span>Browse</a>
             </li>
             <li><a class="border-left" href="#">Shop</a></li>
             <li><a class="border-left" href="#">What is Z-Wave</a></li>
@@ -42,18 +47,104 @@
           </ul>
           <div class="nav navbar-nav navbar-right">
             <li><a class="icon-account-circle" href="#">LOG IN</a></li>
-            <li><a href="#">CART</a></li>
-            <li><a class="icon-search" href="#"></a></li>
+            <li class="hide-element"><div class="divider-line"></div></li>
+            <li><a class="icon-shopping-cart2" href="#">test</a></li>
+            <li class="hide-element"><div class="divider-line"></div></li>
+            <li id="searching"><a class="icon-search" href="#"></a></li>
           </div>
         </div>
       </div>
     </nav>
 
+
+
+
+
+
+
+
+
+    <div id="expander" class="hidden">
+      <div class="shared-container">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-4">
+
+              <div class="footer-group align-right">
+              <div>
+                <img src="images/dropdown-icon-1.png">
+              </div>
+                <div class="footer-title">
+                  Featured Articles
+                </div>
+                <br>
+                <div class="a-div">
+                  <a href="">Most Popular</a><br>
+                </div>
+                <div class="a-div">
+                  <a href="">Latest</a><br>
+                </div>
+                <div class="a-div">
+                  <a href="">Main Feature</a><br>
+                </div>
+                <div class="a-div">
+                  <a href="">Article Archive</a><br>
+                </div>
+                <div class="a-div">
+                  <a href="">Z-Wave the Easy Way</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+              <div class="footer-group align-right">
+                <div class="footer-title">
+                  Z-Wave News
+                </div>
+                <br>
+                <div class="a-div">
+                  <a href="">Feed Pages</a><br>
+                </div>
+                <div class="a-div">
+                  <a href="">In the News</a><br>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+              <div class="footer-group align-right">
+                <div class="footer-title">
+                  Z-Wave Resources
+                </div>
+                <br>
+                <div class="a-div">
+                  <a href="">Z-Wave World Forum</a><br>
+                </div>
+                <div class="a-div">
+                  <a href="">Links</a><br>
+                </div>
+                <div class="a-div">
+                  <a href="">Videos</a><br>
+                </div>
+                <div class="a-div">
+                  <a href="">Featured Reviews</a><br>
+                </div>
+                <div class="a-div">
+                  <a href="">Product Reviews</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
 <!-- //////////////////////////////////////////////////////// -->
 <!-- jumbo section -->
 <!-- //////////////////////////////////////////////////////// -->
-
-
 
     <div class="jumbo-background">
     	<div class="jumbo-inner-container container">
@@ -147,7 +238,6 @@
       <br>
     </div>
 
-
 <!-- //////////////////////////////////////////////////////// -->
 <!-- cascading font size text section / paragraph section -->
 <!-- //////////////////////////////////////////////////////// -->
@@ -187,19 +277,23 @@
 
     <div class="jumbo-background-bottom">
       <div class="content-container container">
-        <div class="connect-header">Connect with Us</div>
-        <div class="connect-subheader">Get in touch with Z-Wave World Today</div>
-        <button class="solid-button">GET IN TOUCH</button>
-        <hr class="connect-line">
-        <a target="_blank" href="https://www.facebook.com">
-          <img src="images/hero-facebook.png">
-        </a>
-        <a target="_blank" href="https://www.twitter.com">
-          <img src="images/hero-twitter.png">
-        </a>
-        <a target="_blank" href="https://www.linkedin.com">
-          <img src="images/hero-linkedin.png">
-        </a>
+        <div class="row align-items-center">
+          <div class="col">
+            <div class="connect-header">Connect with Us</div>
+            <div class="connect-subheader">Get in touch with Z-Wave World Today</div>
+            <button class="solid-button">GET IN TOUCH</button>
+            <hr class="connect-line">
+            <a target="_blank" href="https://www.facebook.com">
+              <img src="images/hero-facebook.png">
+            </a>
+            <a target="_blank" href="https://www.twitter.com">
+              <img class='center-icon' src="images/hero-twitter.png">
+            </a>
+            <a target="_blank" href="https://www.linkedin.com">
+              <img src="images/hero-linkedin.png">
+            </a>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -234,10 +328,10 @@
               </div>
             </div>
           </div>
-        <div class="col-xs-12 col-sm-4">
+          <div class="col-xs-12 col-sm-4">
             <div class="div-group">           
               <div class="icon-container">
-                <img src="images/footer-top-3.png">  
+                <img src="images/footer-top-3.png"> 
               </div>
                 <div class="content-div">
                 Community Forum
@@ -249,147 +343,143 @@
         </div>
       </div>
     </div>
-  </div>
 
 <!-- //////////////////////////////////////////////////////// -->
 <!-- footer section -->
 <!-- //////////////////////////////////////////////////////// -->
 
-<div class="footer-container">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-for5 col-sm-for5 col-xs-for5">
-        <div>
-          <img style="width: 100%;" src="images/footer-logo.png">
-          <br>
-          <br>
-          <span class="footer-copyright"> Copyright &#169; 2016 Z-Wave World<br>All rights reserved</span>
-          <br>
-          <br>
-          <div class="container">
-            <div class="row">
-              <a target="_blank" href="https://www.facebook.com">
-                <img src="images/footer-facebook.png">
-              </a>
-              <a target="_blank" href="https://www.twitter.com">
-                <img src="images/footer-twitter.png">
-              </a>
-              <a target="_blank" href="https://www.linkedin.com">
-                <img src="images/footer-linkedin.png">
-              </a>
+    <div class="shared-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-for5 col-sm-for5 col-xs-for5">
+            <div>
+              <img style="width: 100%;" src="images/footer-logo.png">
+              <br>
+              <br>
+              <span class="footer-copyright"> Copyright &#169; 2016 Z-Wave World<br>All rights reserved</span>
+              <br>
+              <br>
+              <div class="container">
+                <div class="row">
+                  <a target="_blank" href="https://www.facebook.com">
+                    <img src="images/footer-facebook.png">
+                  </a>
+                  <a target="_blank" href="https://www.twitter.com">
+                    <img src="images/footer-twitter.png">
+                  </a>
+                  <a target="_blank" href="https://www.linkedin.com">
+                    <img src="images/footer-linkedin.png">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-for5 col-sm-for5 col-xs-for5 top-line-up">
+            <div class="footer-group align-right">
+              <div class="footer-title">
+                Featured Articles
+              </div>
+              <br>
+              <div class="a-div">
+                <a href="">Most Popular</a><br>
+              </div>
+              <div class="a-div">
+                <a href="">Latest</a><br>
+              </div>
+              <div class="a-div">
+                <a href="">Main Feature</a><br>
+              </div>
+              <div class="a-div">
+                <a href="">Article Archive</a><br>
+              </div>
+              <div class="a-div">
+                <a href="">Z-Wave the Easy Way</a>
+              </div>
+            </div>
+            <br>
+          </div>
+          <div class="col-md-for5 col-sm-for5 col-xs-for5 top-line-up">
+            <div class="footer-group align-right">
+              <div class="footer-title">
+                Z-Wave News
+              </div>
+              <br>
+              <div class="a-div">
+                <a href="">Feed Pages</a><br>
+              </div>
+              <div class="a-div">
+                <a href="">In the News</a><br>
+              </div>
+            </div>
+            <br>
+            <div class="footer-group align-right">
+              <div class="footer-title">
+                What is Z-Wave?
+              </div>
+              <br>
+              <div class="a-div">
+                <a href="">About Us</a><br>
+              </div>
+              <div class="a-div">
+                <a href="">Z-Wave FAQs</a><br>
+              </div>
+              <div class="a-div">
+                <a href="">Dealer List</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-for5 col-sm-for5 col-xs-for5 top-line-up">
+            <div class="footer-group align-right">
+              <div class="footer-title">
+                Z-Wave Resources
+              </div>
+              <br>
+              <div class="a-div">
+                <a href="">Z-Wave World Forum</a><br>
+              </div>
+              <div class="a-div">
+                <a href="">Links</a><br>
+              </div>
+              <div class="a-div">
+                <a href="">Videos</a><br>
+              </div>
+              <div class="a-div">
+                <a href="">Featured Reviews</a><br>
+              </div>
+              <div class="a-div">
+                <a href="">Product Reviews</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-for5 col-sm-for5 col-xs-for5 top-line-up">
+           <div class="footer-group align-right">
+              <div class="footer-title">
+                Shop
+              </div>
+              <br>
+              <div class="a-div">
+                <a href="">Z-Wave Products</a><br>
+              </div>
+              <div class="a-div">
+                <a href="">Z-Wave Amazon Store</a><br>
+              </div>
+            </div>
+            <br>
+            <div class="footer-group align-right">
+              <div class="footer-title">
+                Contact Us
+              </div>
+              <br>
+              <div class="a-div">
+                <a href="">Advertisers</a><br>
+              </div>
+              <div class="a-div">
+                <a href="">Dealer List</a><br>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-md-for5 col-sm-for5 col-xs-for5 top-line-up">
-        <div class="footer-group align-right">
-          <div class="footer-title">
-            Featured Articles
-          </div>
-          <br>
-          <div class="a-div">
-            <a href="">Most Popular</a><br>
-          </div>
-          <div class="a-div">
-            <a href="">Latest</a><br>
-          </div>
-          <div class="a-div">
-            <a href="">Main Feature</a><br>
-          </div>
-          <div class="a-div">
-            <a href="">Article Archive</a><br>
-          </div>
-          <div class="a-div">
-            <a href="">Z-Wave the Easy Way</a>
-          </div>
-        </div>
-        <br>
-      </div>
-      <div class="col-md-for5 col-sm-for5 col-xs-for5 top-line-up">
-        <div class="footer-group align-right">
-          <div class="footer-title">
-            Z-Wave News
-          </div>
-          <br>
-          <div class="a-div">
-            <a href="">Feed Pages</a><br>
-          </div>
-          <div class="a-div">
-            <a href="">In the News</a><br>
-          </div>
-        </div>
-        <br>
-        <div class="footer-group align-right">
-          <div class="footer-title">
-            What is Z-Wave?
-          </div>
-          <br>
-          <div class="a-div">
-            <a href="">About Us</a><br>
-          </div>
-          <div class="a-div">
-            <a href="">Z-Wave FAQs</a><br>
-          </div>
-          <div class="a-div">
-            <a href="">Dealer List</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-for5 col-sm-for5 col-xs-for5 top-line-up">
-        <div class="footer-group align-right">
-          <div class="footer-title">
-            Z-Wave Resources
-          </div>
-          <br>
-          <div class="a-div">
-            <a href="">Z-Wave World Forum</a><br>
-          </div>
-          <div class="a-div">
-            <a href="">Links</a><br>
-          </div>
-          <div class="a-div">
-            <a href="">Videos</a><br>
-          </div>
-          <div class="a-div">
-            <a href="">Featured Reviews</a><br>
-          </div>
-          <div class="a-div">
-            <a href="">Product Reviews</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-for5 col-sm-for5 col-xs-for5 top-line-up">
-       <div class="footer-group align-right">
-          <div class="footer-title">
-            Shop
-          </div>
-          <br>
-          <div class="a-div">
-            <a href="">Z-Wave Products</a><br>
-          </div>
-          <div class="a-div">
-            <a href="">Z-Wave Amazon Store</a><br>
-          </div>
-        </div>
-        <br>
-        <div class="footer-group align-right">
-          <div class="footer-title">
-            Contact Us
-          </div>
-          <br>
-          <div class="a-div">
-            <a href="">Advertisers</a><br>
-          </div>
-          <div class="a-div">
-            <a href="">Dealer List</a><br>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
-
-</div>
-
-
-    </body>
-    </html>
+  </body>
+</html>
