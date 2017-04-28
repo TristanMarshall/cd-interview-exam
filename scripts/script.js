@@ -1,16 +1,15 @@
 $(document).ready(function(){
 
-	console.log("jQuery movin!");
-
-	// function loop () {
+	// set string variable for loop
 	var looptext = "One Morning, When Gregor Samsa Woke";
 
+	// get ID of container
 	var container = document.getElementById("loop-container");
-
 		for (var i = 0; i < 6; i++) {
 
 			var indy = "";
 
+			// set second class of div based off of index
 			switch(i) {
 				case 0:
 					indy = "zero";
@@ -32,11 +31,11 @@ $(document).ready(function(){
 					break;
 			}
 
-			$(container).append("<div class='loop-class " + indy + "'>" + looptext + "</div><div class='second-class " + indy + "'>" + looptext +  "</div>");
+			// append div HTML to container
+			$(container).append("<div class='loop-class " + indy + "'>" + looptext + "</div><div class='second-class " + indy + "'>" + looptext +  "</div><br>");
 		};
 
-		console.log($(".loop-class"));
-
+		// Change string variable for loop with 0 index
 		$(".loop-class")[0].innerHTML = "One Morning, When Gregor Samsa";
 
 });
