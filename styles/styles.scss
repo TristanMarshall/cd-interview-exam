@@ -140,7 +140,7 @@ $app-light-grey: #e1eeee;
 	}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 	.mobile-show {
 		display: block;
 	}
@@ -151,14 +151,27 @@ $app-light-grey: #e1eeee;
 ////////////////////////////////////////////////////////
 
 .nav-styles {
-	background-color: yellow;
+	background-color: white;
 
 	.navbar-header {
-		background-color: orange;
+		background-color: white;
 
 		.navbar-toggle {
 			border: none;
 		}
+	}
+
+	a {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.border-left { 
+		border-left: 1px solid $app-light-grey;
+	}
+
+	.border-right {
+		border-right: 1px solid $app-light-grey;
 	}
 }
 
@@ -194,47 +207,58 @@ $app-light-grey: #e1eeee;
 
 }
 
+@media (max-width: 767px) {
+	.jumbo-background {
+		text-align: center;
+	}
+}
+
 ////////////////////////////////////////////////////////
 // colored boxes / down-sizing text section
 ////////////////////////////////////////////////////////
 
 .boxes {
-	width: 100%;
+	width: 50px;
 	max-width: 50px;
 	height: 50px;
 	display: inline-block;
 	margin-right: 20px;
 
-	&.darkblue { background-color: $app-dark-blue}
-	&.green { background-color: $app-green}
-	&.orange { background-color: $app-orange}
-	&.blue { background-color: $app-blue}
-	&.darkgrey { background-color: $app-dark-grey}
-	&.grey { background-color: $app-grey}
-	&.lightgrey { background-color: $app-light-grey}
+	&.darkblue { background-color: $app-dark-blue }
+	&.green { background-color: $app-green } 
+	&.orange { background-color: $app-orange }
+	&.blue { background-color: $app-blue }
+	&.darkgrey { background-color: $app-dark-grey }
+	&.grey { background-color: $app-grey }
+	&.lightgrey { background-color: $app-light-grey }
 }
 
 .loop-container {
 
 	.loop-class {
 		font-size: 30px;
-		&.one {font-size: 26px;}
-		&.two {font-size: 22px;}
-		&.three {font-size: 18px;}
-		&.four {font-size: 16px;}
-		&.five {font-size: 12px;}
+		&.one { font-size: 26px; }
+		&.two { font-size: 22px; }
+		&.three { font-size: 18px; }
+		&.four { font-size: 16px; }
+		&.five { font-size: 12px; }
 	}
 
 	.second-class {
 		font-size: 20px;
-		&.one {font-size: 16px;}
-		&.two {font-size: 12px;}
-		&.three {font-size: 8px;}
-		&.four {font-size: 4px;}
-		&.five {font-size: 2px;}
+		&.one { font-size: 16px; }
+		&.two { font-size: 12px; }
+		&.three { font-size: 8px; }
+		&.four { font-size: 4px; }
+		&.five { font-size: 2px; }
 	}
 }
 
+
+@media (max-width: 700px) {
+	width: 100%;
+	max-width: 100%;
+}
 
 ////////////////////////////////////////////////////////
 // text section
@@ -249,47 +273,91 @@ $app-light-grey: #e1eeee;
 
 .jumbo-background-bottom {
 	margin: 0 auto;
-    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/hero-image-2.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: 0% 0%;
-    position: relative;
-    background-size: 100% auto;
-    height: 30vw;
-    max-height: 500px;
-    overflow: hidden;
-    text-align: center;
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/hero-image-2.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0% 0%;
+  position: relative;
+  background-size: 100% auto;
+  height: 30vw;
+  max-height: 500px;
+  overflow: hidden;
+  text-align: center;
 
-    .content-container {
+  .content-container {
 
-    	text-align: center;
-    	padding-top: 50px;
+  	text-align: center;
+  	padding-top: 50px;
 
-	    .connect-header {
-	    	color: $app-light-grey;
-	    	font-size: 30px;
-	    	font-weight: bold;
-	    }
+    .connect-header {
+    	color: $app-light-grey;
+    	font-size: 30px;
+    	font-weight: bold;
+    }
 
-	    .connect-subheader {
-	    	color: $app-light-grey;
-	    	font-size: 15px;
-	    }
+    .connect-subheader {
+    	color: $app-light-grey;
+    	font-size: 15px;
+    }
 
-	    .connect-line {
-	    	width: 50px;
-	    	border: none;
-	    	padding-bottom: 1px;
-	    	background-color: rgba(255, 255, 255, .4);
-	    }
+    .connect-line {
+    	width: 50px;
+    	border: none;
+    	padding-bottom: 1px;
+    	background-color: rgba(255, 255, 255, .4);
+    }
 	}
-
 }
 
 ////////////////////////////////////////////////////////
 // three part icon section
 ////////////////////////////////////////////////////////
 
+.footer-top-section {
+	padding: 30px 50px;
+	.icon-container {
+		width: 50px;
+		display: inline-block;
+
+		img {
+			margin-top: -22px;
+		}
+	}
+
+	.content-div {
+		display: inline-block;
+		color: $app-dark-blue;
+		font-weight: bold;
+		font-size: 13px;
+
+		span {
+			color: $app-grey;
+			font-weight: normal;
+			font-size: 18px;
+		}
+	}
+}
+
+@media (max-width: 820px) {
+	.footer-top-section {
+		padding: 20px 10px;
+	}
+}
+
+@media (max-width: 768px) {
+	.footer-top-section {
+		text-align: center;
+
+		.div-group {
+			margin-bottom: 25px;
+
+			.content-div {
+				text-align: left;
+				margin-left: 10px;
+			}
+		}
+	}
+}
 
 
 ////////////////////////////////////////////////////////
@@ -297,7 +365,7 @@ $app-light-grey: #e1eeee;
 ////////////////////////////////////////////////////////
 
 .footer-container {
-	padding: 50px 50px;
+	padding: 40px 50px;
 	background-color: white;
 	border-top: 1px solid $app-light-grey;
 
