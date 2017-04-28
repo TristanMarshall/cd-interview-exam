@@ -1,6 +1,10 @@
 $(document).ready(function(){
+
+	$('.welcome-overlay').delay(1000).fadeOut(1000);
+
 	$( "#expander" ).hide();
 	$( "#searchbox" ).hide();
+	$( "#dialogoverlay" ).hide();
 
 	// set string variable for loop
 	var looptext = "One Morning, When Gregor Samsa Woke";
@@ -33,8 +37,8 @@ $(document).ready(function(){
 					break;
 			}
 
-			// append div HTML to container
-			$(container).append("<div class='loop-class " + indy + "'>" + looptext + "</div><div class='second-class " + indy + "'>" + looptext +  "</div><br>");
+		// append div HTML to container
+		$(container).append("<div class='loop-class " + indy + "'>" + looptext + "</div><div class='second-class " + indy + "'>" + looptext +  "</div><br>");
 		};
 
 		// Change string variable for loop with 0 index
@@ -59,6 +63,12 @@ $(document).ready(function(){
 		$("#closesearch").click(function() {
 			$('#searchinput').val('');
 			$("#searchbox").fadeToggle( "slow", function() {
+			});
+		});
+
+		// Toggle dialog
+		$("#dialogtrigger").click(function() {
+			$("#dialogoverlay").fadeToggle( "slow", function() {
 			});
 		});
 
