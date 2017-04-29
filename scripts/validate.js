@@ -1,5 +1,8 @@
 $(document).ready(function(){
 
+	// hide account state
+	$(".jumbo-inner-container-account").hide();
+
 	// Set header login state to "login" on ready
 	$(".login-account")[0].innerHTML = "LOGIN";
 
@@ -40,8 +43,16 @@ $(document).ready(function(){
 			return;
 		} 
 
-		// reset all values / close dialog
+		// change element inner HTML
+		$(".jumbo-header-account")[0].innerHTML = "Welcome Back to Z-Wave!";
+		$(".jumbo-subheader-account")[0].innerHTML = "Account Email: " + emailaddress;
 		$(".login-account")[0].innerHTML = "ACCOUNT";
+
+		// change jumbo account state
+		$(".jumbo-inner-container").hide();
+		$(".jumbo-inner-container-account").show();
+
+		// reset input values
 		$(".validation-div")[0].innerHTML = "";
 		$(".email-input").val("");
 		$(".password-input").val("");

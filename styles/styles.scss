@@ -144,7 +144,8 @@ $font-open-sans: 'Open Sans', sans-serif;
 
 	    .validation-div {
 	    	font-size: 12px;
-		    height: 20px;
+		    min-height: 20px;
+		    height: auto;
 		    color: tomato;
 		    margin-top: 15px;
     		margin-bottom: 15px;
@@ -270,6 +271,7 @@ $font-open-sans: 'Open Sans', sans-serif;
     }
 }
 
+// show/hide
 .hidden {
 	display: none;
 }
@@ -292,6 +294,31 @@ $font-open-sans: 'Open Sans', sans-serif;
 	.mobile-show {
 		display: block;
 	}
+}
+
+// arrow div
+
+.arrow-div {
+	position: relative;
+	background: $app-light-grey;
+}
+
+.arrow-div:after {
+	right: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(136, 183, 213, 0);
+	border-right-color: $app-light-grey;
+	border-width: 4px;
+	margin-top: -4px;
+	margin-left: 12px;
+  padding-left: 7px;
+  padding-right: 10px;
 }
 
 ////////////////////////////////////////////////////////
@@ -366,28 +393,28 @@ $font-open-sans: 'Open Sans', sans-serif;
 				padding: 0;
 				padding-left: 23px;
 
-				.arrow-div {
-					position: relative;
-					background: $app-light-grey;
-				}
+				// .arrow-div {
+				// 	position: relative;
+				// 	background: $app-light-grey;
+				// }
 
-				.arrow-div:after {
-					right: 100%;
-					top: 50%;
-					border: solid transparent;
-					content: " ";
-					height: 0;
-					width: 0;
-					position: absolute;
-					pointer-events: none;
-					border-color: rgba(136, 183, 213, 0);
-					border-right-color: $app-light-grey;
-					border-width: 4px;
-					margin-top: -4px;
-					margin-left: 12px;
-			    padding-left: 7px;
-			    padding-right: 10px;
-				}
+				// .arrow-div:after {
+				// 	right: 100%;
+				// 	top: 50%;
+				// 	border: solid transparent;
+				// 	content: " ";
+				// 	height: 0;
+				// 	width: 0;
+				// 	position: absolute;
+				// 	pointer-events: none;
+				// 	border-color: rgba(136, 183, 213, 0);
+				// 	border-right-color: $app-light-grey;
+				// 	border-width: 4px;
+				// 	margin-top: -4px;
+				// 	margin-left: 12px;
+			 //    padding-left: 7px;
+			 //    padding-right: 10px;
+				// }
 			}
 			div.arrow-div {
 				padding-left: 7px;
@@ -426,6 +453,27 @@ $font-open-sans: 'Open Sans', sans-serif;
   margin-top: -20px;
 }
 
+
+
+
+.three-part-nav {
+		display: none;
+		padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: -20px;
+    background-color: #f7f7f7;
+
+	.row {
+
+		.three-part-sections {
+
+		}
+	}
+}
+
+
+
+
 @media (max-width: 767px) {
 
 	a {
@@ -439,11 +487,20 @@ $font-open-sans: 'Open Sans', sans-serif;
 	.hide-element {
 		display: none !important;
 	}
+
 	#searchbox {
 		input {
 			width: 83%;
 			font-size: 12px;
 		}
+	}
+
+	.three-part-nav {
+		display: block;
+	}
+
+	#expander {
+		margin-top: 14px;
 	}
 }
 
@@ -452,11 +509,11 @@ $font-open-sans: 'Open Sans', sans-serif;
 ////////////////////////////////////////////////////////
 
 .jumbo-background {
-    height: 250px;
-    margin-top: -20px;
-    background-image: (linear-gradient(90deg, rgba(7, 40, 65, 0.75), rgba(7, 40, 65, 0.75)), url(../images/hero-image.png));
-    background-repeat: no-repeat;
-   	background-position: 0% 0%;
+  height: 250px;
+  margin-top: -20px;
+  background-image: (linear-gradient(90deg, rgba(7, 40, 65, 0.75), rgba(7, 40, 65, 0.75)), url(../images/hero-image.png));
+  background-repeat: no-repeat;
+ 	background-position: 0% 0%;
 	position: relative;
 }
 
@@ -476,17 +533,66 @@ $font-open-sans: 'Open Sans', sans-serif;
 			font-size: 16px;
 		}
 	}
+}
 
+.jumbo-inner-container-account {
+	text-align: center;
+	max-width: 610px;
+
+	.row {
+			margin-top: 50px;
+
+		.jumbo-header-account {
+			display: inline-block;
+			margin: 0;
+			color: $app-light-grey;
+			font-size: 35px;
+			font-weight: bold;
+		}
+
+		.jumbo-subheader-account {
+			display: inline-block;
+			margin: 0;
+			color: $app-light-grey;
+			font-size: 16px;
+		}
+
+		hr {
+    	width: 50px;
+    	border: none;
+    	padding-bottom: 1px;
+    	background-color: rgba(255, 255, 255, 0.28);
+	    margin-top: 15px;
+	    margin-bottom: 15px;
+		}
+	}
 }
 
 @media (max-width: 767px) {
 	.jumbo-background {
 		text-align: center;
+  	margin-top: 0px;
 
 		.jumbo-inner-container {
 
 			.row {
 				margin-top: 55px;
+			}
+		}
+	}
+
+	.jumbo-inner-container-account {
+
+		.row {
+				margin-top: 70px;
+
+			.jumbo-header-account {
+				font-size: 22px;
+			}
+
+			.jumbo-subheader-account {
+		    font-size: 14px;
+		    margin-top: 6px;
 			}
 		}
 	}

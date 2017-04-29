@@ -1,10 +1,11 @@
 $(document).ready(function(){
 
-	$('.welcome-overlay').delay(1000).fadeOut(1000);
-
+	$( "#dialogoverlay").hide();
 	$( "#expander" ).hide();
 	$( "#searchbox" ).hide();
-	$( "#dialogoverlay" ).hide();
+
+	$('.welcome-overlay').delay(1000).fadeOut(1000);
+
 
 	// set string variable for loop
 	var looptext = "One Morning, When Gregor Samsa Woke";
@@ -45,7 +46,7 @@ $(document).ready(function(){
 		$(".loop-class")[0].innerHTML = "One Morning, When Gregor Samsa";
 
 		// Toggle expanding menu
-		$('#expandMenu').click(function(){
+		$('.expandMenu').click(function(){
 			$('#expander').removeClass('hidden');
 		   $( "#expander" ).fadeToggle( "slow", function() {
   		});
@@ -67,7 +68,7 @@ $(document).ready(function(){
 		});
 
 		// Toggle dialog
-		$("#dialogtrigger").click(function() {
+		$(".dialogtrigger").click(function() {
 			$("#dialogoverlay").fadeToggle( "slow", function() {
 			});
 		});

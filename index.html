@@ -13,6 +13,10 @@
   </head>
   <body>
 
+<!-- //////////////////////////////////////////////////////// -->
+<!-- overlays & dialog section -->
+<!-- //////////////////////////////////////////////////////// -->
+
 <!--     <div class="welcome-overlay">
       <div>
         <img src="images/header-logo.png">
@@ -21,10 +25,8 @@
 
     <div id="searchbox" class="hidden">
       <input id="searchinput" placeholder="Search by topic or keyword and hit enter">
-
       <div id="closesearch" class="icon-clear"></div>
     </div>
-
 
     <div id="dialogoverlay" class="dialog-overlay">
       <div class="dialog">
@@ -51,6 +53,10 @@
       </div>
     </div>
 
+<!-- //////////////////////////////////////////////////////// -->
+<!-- navigation section -->
+<!-- //////////////////////////////////////////////////////// -->
+
     <nav class="navbar navbar-default">
       <div class="container-fluid nav-styles">
         <div class="navbar-header">
@@ -67,9 +73,9 @@
         	</div>
         </div>
         <div class="collapse navbar-collapse" id="navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="dropdown" id="expandMenu">
-              <a href="#" class="border-left icon-menu"><div>Browse</div></a>
+          <ul class="nav navbar-nav" data-toggle="collapse" data-target="#navbar-collapse" >
+            <li class="dropdown expandMenu">
+              <a href="#" class="border-left icon-menu hide-element"><div>Browse</div></a>
             </li>
             <li>
               <a class="border-left" href="#">
@@ -87,13 +93,15 @@
               </a>
             </li>
           </ul>
+
+
+
           <div class="nav navbar-nav navbar-right">
-            <li class="dropdown" id="dialogtrigger">
-              <a href="#" class="icon-account-circle"><div><span class="login-account"></span></div> </a>
+            <li class="dropdown hide-element dialogtrigger">
+              <!-- <a href="#" class="icon-account-circle"><div><span class="login-account"></span></div> </a> -->
             </li>
             <li class="hide-element"><div class="divider-line"></div></li>
-
-            <li class="dropdown">
+            <li class="dropdown hide-element">
               <a href="#" class="icon-shopping-cart2">
                 <div>
                   <div class="arrow-div">
@@ -114,7 +122,6 @@
         <div class="container">
           <div class="row">
             <div class="col-xs-12 col-sm-4">
-
               <div class="footer-group align-right">
               <div>
                 <img src="images/dropdown-icon-1.png">
@@ -182,6 +189,31 @@
       </div>
     </div>
 
+
+
+    <div class="container three-part-nav">
+      <div class="row">
+        <div class="col-xs-4 3-part-sections expandMenu">
+          <a href="#" class="border-left icon-menu"><div>Browse</div></a>
+        </div>
+
+        <div class="col-xs-4 three-part-sections">
+          <a href="#" class="icon-shopping-cart2">
+              <div>
+                <div class="arrow-div">
+                  3
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-xs-4 three-part-sections dialogtrigger">
+            <a href="#" class="icon-account-circle"><div><span class="login-account"></span></div></a>
+        </div>
+      </div>
+    </div>
+
+
+
 <!-- //////////////////////////////////////////////////////// -->
 <!-- jumbo section -->
 <!-- //////////////////////////////////////////////////////// -->
@@ -200,6 +232,16 @@
     	    </div>
     	  </div>
     	</div>
+      <div class="jumbo-inner-container-account container">
+        <div class="row">
+          <div class="jumbo-header-account"></div>
+          <br>
+          <divdiv class="jumbo-subheader-account"></divdiv>
+          <br>
+          <hr>
+          <button class="solid-button">GET STARTED</button>
+        </div>
+      </div>
     </div>
 
 <!-- //////////////////////////////////////////////////////// -->
@@ -274,6 +316,7 @@
       </div>
     </div>
     <br>
+
 <!-- //////////////////////////////////////////////////////// -->
 <!-- cascading font size text section / paragraph section -->
 <!-- //////////////////////////////////////////////////////// -->
