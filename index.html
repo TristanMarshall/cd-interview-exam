@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="scripts/script.js"></script>
+    <script src="scripts/validate.js"></script>
   	<link rel="stylesheet" href="styles/styles.css">
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
@@ -12,14 +13,15 @@
   </head>
   <body>
 
-    <div class="welcome-overlay">
+<!--     <div class="welcome-overlay">
       <div>
         <img src="images/header-logo.png">
       </div>
-    </div>
+    </div> -->
 
     <div id="searchbox" class="hidden">
       <input id="searchinput" placeholder="Search by topic or keyword and hit enter">
+
       <div id="closesearch" class="icon-clear"></div>
     </div>
 
@@ -27,19 +29,24 @@
     <div id="dialogoverlay" class="dialog-overlay">
       <div class="dialog">
         <div class="inner-dialog">
+          <br>
           <div>
-            Sign up for Z-Wave Today
+            Login to Z-Wave
           </div>
           <br>
           <br>
-          <input placeholder="Email Address">
+          <input id="emailinput" class="email-input" placeholder="Email Address" type="email">
           <br>
           <br>
-          <input placeholder="Password (Minimum 6 characters)">
+          <input class="password-input" id="passwordcheck" type="password" pattern=".{6,}" placeholder="Password (Minimum 7 characters)">
           <br>
-          <br>
-          <br>
-          <button class="solid-button">SIGN UP</button>
+          <div id="validationDiv" class="validation-div">
+          </div>
+        </div>
+        <hr>
+        <div class="bottom-div">
+          <div class="cancel" id="cancelLogin">CANCEL</div>
+          <div class="submit" id="submitLogin">SUBMIT</div>
         </div>
       </div>
     </div>
@@ -82,7 +89,7 @@
           </ul>
           <div class="nav navbar-nav navbar-right">
             <li class="dropdown" id="dialogtrigger">
-              <a href="#" class="icon-account-circle"><div><span>LOGIN</span></div> </a>
+              <a href="#" class="icon-account-circle"><div><span class="login-account"></span></div> </a>
             </li>
             <li class="hide-element"><div class="divider-line"></div></li>
 
@@ -90,7 +97,7 @@
               <a href="#" class="icon-shopping-cart2">
                 <div>
                   <div class="arrow-div">
-                    4
+                    3
                   </div>
                 </div>
               </a>

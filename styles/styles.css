@@ -31,13 +31,13 @@
 .icon-shopping-cart2:before {
   content: "\e8c9";
   color: #00b151;
-  font-size: 16px;
+  font-size: 15px;
   position: absolute; }
 
 .icon-account-circle:before {
   content: "\e602";
   color: #00b151;
-  font-size: 19px;
+  font-size: 16px;
   position: absolute; }
 
 .icon-clear:before {
@@ -73,18 +73,43 @@
     background: white;
     box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.34); }
     .dialog-overlay .dialog .inner-dialog {
-      padding: 30px;
+      padding: 30px 30px 0px 30px;
       text-align: center; }
       .dialog-overlay .dialog .inner-dialog div {
         font-family: "Open Sans", sans-serif;
-        font-size: 24px;
+        font-size: 22px;
         font-weight: bold;
         color: #013a60; }
       .dialog-overlay .dialog .inner-dialog input {
         width: 100%;
+        padding: 10px 10px;
         border: 1px solid #e1eeee;
+        background-color: #f7f7f7;
         border-radius: 2px;
-        font-family: "Open Sans", sans-serif; }
+        font-family: "Open Sans", sans-serif;
+        outline: none; }
+      .dialog-overlay .dialog .inner-dialog .validation-div {
+        font-size: 12px;
+        height: 20px;
+        color: tomato;
+        margin-top: 15px;
+        margin-bottom: 15px; }
+    .dialog-overlay .dialog hr {
+      margin: 0; }
+    .dialog-overlay .dialog .bottom-div {
+      padding: 15px 20px 15px 15px;
+      text-align: right; }
+      .dialog-overlay .dialog .bottom-div .cancel {
+        display: inline-block;
+        color: tomato;
+        padding-right: 25px;
+        font-weight: bold;
+        cursor: pointer; }
+      .dialog-overlay .dialog .bottom-div .submit {
+        display: inline-block;
+        color: #008bd3;
+        font-weight: bold;
+        cursor: pointer; }
 
 @media (max-width: 767px) {
   .dialog-overlay .dialog {
@@ -215,7 +240,7 @@
       display: inline-block;
       margin: 0;
       padding: 0;
-      padding-left: 24px; }
+      padding-left: 23px; }
       .nav-styles li a div .arrow-div {
         position: relative;
         background: #e1eeee; }
@@ -235,6 +260,11 @@
         margin-left: 12px;
         padding-left: 7px;
         padding-right: 10px; }
+    .nav-styles li a div.arrow-div {
+      padding-left: 7px;
+      padding-right: 7px; }
+  .nav-styles li a.icon-search {
+    padding-right: 0px; }
   .nav-styles .border-left {
     border-left: 1px solid #e1eeee; }
   .nav-styles .border-right {
