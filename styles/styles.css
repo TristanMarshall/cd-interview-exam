@@ -235,7 +235,8 @@
     font-size: 20px;
     padding-top: 20px;
     padding-right: 20px;
-    color: #95a2aa; }
+    color: #95a2aa;
+    cursor: pointer; }
 
 .nav-styles {
   font-family: "Open Sans", sans-serif;
