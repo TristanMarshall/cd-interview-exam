@@ -36,11 +36,15 @@ say “Account” and outputs the stored email address on the page.
 * jQuery
 
 ### Screenshots of site:
+
 * Desktop & Mobile Screenshots
 ![alt image](/images/readme-images/screen-shot-desktop-mobile.jpg)
 
 * User lightbox login dialog 
 ![alt image](/images/readme-images/screen-shot-dialog.png)
+
+* User lightbox logn dialog validation 
+![alt image](/images/readme-images/screen-shot-validation.png)
 
 * Site "Account" State / Output of stored email address
 ![alt image](/images/readme-images/screen-shot-loggedin.png)
