@@ -4,10 +4,10 @@ $(document).ready(function(){
 	$(".jumbo-inner-container-account").hide();
 
 	// Set header login state to "login" on ready
-	$(".login-account")[0].innerHTML = "LOGIN";
-	$(".login-account-mobile")[0].innerHTML = "LOGIN";
+	$(".login-account")[0].innerHTML = "LOG IN";
+	$(".login-account-mobile")[0].innerHTML = "LOG IN";
 
-	// Close dialog
+	// Close dialog / reset values
 	$("#cancelLogin").click(function() {
 		$(".validation-div")[0].innerHTML = "";
 		$(".email-input").val("");

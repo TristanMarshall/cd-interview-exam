@@ -108,7 +108,7 @@ $font-open-sans: 'Open Sans', sans-serif;
 	width: 100%;
   height: 1000px;
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   background-color: rgba(0, 0, 0, 0.32);
 
 	.dialog {
@@ -453,15 +453,12 @@ $font-open-sans: 'Open Sans', sans-serif;
   margin-top: -20px;
 }
 
-
-
-
 .three-part-nav {
 		display: none;
-		padding-top: 10px;
+		padding-top: 7px;
     padding-bottom: 10px;
     margin-top: -20px;
-    // background-color: #f7f7f7;
+    background-color: #f7f7f7;
 
 	.row {
 		// background-color: red;
@@ -471,13 +468,16 @@ $font-open-sans: 'Open Sans', sans-serif;
 
 			a {
 				text-decoration: none;
+				font-size: 11px;
+				cursor: pointer;
 
 				.centering-div {
 				  max-width: 70px;
     			margin: 0 auto;
 
 					.icon-menu, .icon-account-circle, .icon-shopping-cart2 {
-						padding-right: 100px;
+						padding-right: 50px;
+						padding-bottom: 2px;
 					}
 
 					.icon-account-circle:before {
@@ -497,7 +497,7 @@ $font-open-sans: 'Open Sans', sans-serif;
 					.arrow-div {
 						font-family: $font-open-sans;
 						width: 20px;
-	  				margin-left: 30px;
+	  				margin-left: 38px;
 	  				padding: 0px 4px 0px 4px;
 					}
 				}
@@ -813,17 +813,30 @@ $font-open-sans: 'Open Sans', sans-serif;
 
 
 ////////////////////////////////////////////////////////
-// footer section
+// footer section / extended browse menu
 ////////////////////////////////////////////////////////
 
 .shared-container {
 	padding: 40px 20px;
 	background-color: white;
 	border-top: 1px solid $app-light-grey;
+	box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.58);
 
 	.container {
 
 		.row {
+
+			.container-div {
+				max-width: 300px;
+				margin-bottom: 25px;
+				margin: 0 auto;
+
+				.icon-div {
+					img {
+						width: 40px;
+					}
+				}
+			}
 
 			.top-line-up {
 				margin-top: 15px;
@@ -851,7 +864,7 @@ $font-open-sans: 'Open Sans', sans-serif;
 					color: orange;
 
 					.footer-title {
-						margin-bottom: 0px;
+						margin-bottom: 10px;
 						color: $app-dark-blue;
 						font-size: 16px;
 						font-weight: bold;
@@ -875,9 +888,17 @@ $font-open-sans: 'Open Sans', sans-serif;
 
 @media (max-width: 768px) {
 	.shared-container {
-		padding: 50px;
+		// padding: 50px;
 		.container {
 			.row {
+
+				.container-div {
+
+					.bottom-margin {
+						margin-bottom: 25px;
+					}
+				}
+				
 				div {
 					.align-right {
 						// text-align: right;
@@ -894,6 +915,7 @@ $font-open-sans: 'Open Sans', sans-serif;
 
 		.container {
 			.row {
+
 				.top-line-up {
 					margin-top: 0px;
 				}

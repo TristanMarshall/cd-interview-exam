@@ -61,7 +61,7 @@
   width: 100%;
   height: 1000px;
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   background-color: rgba(0, 0, 0, 0.32); }
   .dialog-overlay .dialog {
     width: 100%;
@@ -289,16 +289,20 @@
 
 .three-part-nav {
   display: none;
-  padding-top: 10px;
+  padding-top: 7px;
   padding-bottom: 10px;
-  margin-top: -20px; }
+  margin-top: -20px;
+  background-color: #f7f7f7; }
   .three-part-nav .row .three-part-sections a {
-    text-decoration: none; }
+    text-decoration: none;
+    font-size: 11px;
+    cursor: pointer; }
     .three-part-nav .row .three-part-sections a .centering-div {
       max-width: 70px;
       margin: 0 auto; }
       .three-part-nav .row .three-part-sections a .centering-div .icon-menu, .three-part-nav .row .three-part-sections a .centering-div .icon-account-circle, .three-part-nav .row .three-part-sections a .centering-div .icon-shopping-cart2 {
-        padding-right: 100px; }
+        padding-right: 50px;
+        padding-bottom: 2px; }
       .three-part-nav .row .three-part-sections a .centering-div .icon-account-circle:before {
         font-size: 19px; }
       .three-part-nav .row .three-part-sections a .centering-div .icon-shopping-cart2:before {
@@ -310,7 +314,7 @@
       .three-part-nav .row .three-part-sections a .centering-div .arrow-div {
         font-family: "Open Sans", sans-serif;
         width: 20px;
-        margin-left: 30px;
+        margin-left: 38px;
         padding: 0px 4px 0px 4px; }
 
 @media (max-width: 767px) {
@@ -521,7 +525,14 @@
 .shared-container {
   padding: 40px 20px;
   background-color: white;
-  border-top: 1px solid #e1eeee; }
+  border-top: 1px solid #e1eeee;
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.58); }
+  .shared-container .container .row .container-div {
+    max-width: 300px;
+    margin-bottom: 25px;
+    margin: 0 auto; }
+    .shared-container .container .row .container-div .icon-div img {
+      width: 40px; }
   .shared-container .container .row .top-line-up {
     margin-top: 15px; }
   .shared-container .container .row a {
@@ -536,7 +547,7 @@
   .shared-container .container .row div .footer-group {
     color: orange; }
     .shared-container .container .row div .footer-group .footer-title {
-      margin-bottom: 0px;
+      margin-bottom: 10px;
       color: #013a60;
       font-size: 16px;
       font-weight: bold; }
@@ -549,8 +560,8 @@
       color: #95a2aa; }
 
 @media (max-width: 768px) {
-  .shared-container {
-    padding: 50px; } }
+  .shared-container .container .row .container-div .bottom-margin {
+    margin-bottom: 25px; } }
 @media (max-width: 480px) {
   .shared-container {
     padding: 50px 20px; }
