@@ -45,5 +45,8 @@ say “Account” and outputs the stored email address on the page.
 * Site "Account" State / Output of stored email address
 ![alt image](/images/readme-images/screen-shot-loggedin.png)
 
+* “Browse” mega menu and for the toggled state of the site search
+![alt image](/images/readme-images/screen-shot-dropdown-search.png)
+
 
 ###### This application was created by Tristan Marshall
