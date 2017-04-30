@@ -2,9 +2,9 @@
 
 ##### This is the readme.md file for the Developer Interview Exam for C.D.
 
-##### 
+### Instructions
 
-### Slice PSD and Build Out Local Site
+#### Slice PSD and Build Out Local Site
 
 ##### Take the PSD called ZWave_Desktop.psd and slice the design to build out a local copy of the
 website. A desktop version is the only design comp provided but it is expected that you build out
@@ -14,7 +14,7 @@ Bootstrap or Foundation or custom code the entire template. Please make sure to 
 invisible layers in the PSD for the “Browse” mega menu and for the toggled state of the site
 search.
 
-### JavaScript and jQuery
+#### JavaScript and jQuery
 
 #### Using the template built out in the first step implement the following:
 
