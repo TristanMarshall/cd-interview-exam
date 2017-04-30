@@ -40,7 +40,7 @@ say “Account” and outputs the stored email address on the page.
 ![alt image](/images/readme-images/screen-shot-desktop-mobile.jpg)
 
 * User lightbox login dialog 
-![alt image](/images/readme-images/screen-shot-dialog.jpg)
+![alt image](/images/readme-images/screen-shot-dialog.png)
 
 
 ###### This application was created by Tristan Marshall
