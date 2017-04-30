@@ -41,7 +41,7 @@ $(document).ready(function(){
 			}
 
 		// append div HTML to container
-		$(container).append("<div class='loop-class " + indy + "'>" + looptext + "</div><div class='second-class " + indy + "'>" + looptext +  "</div><br>");
+		$(container).append("<div class='loop-class " + indy + "'>" + looptext + "</div><div class='second-class " + indy + "'>" + looptext +  "</div><br><br>");
 		};
 
 		// Change string variable for loop with 0 index

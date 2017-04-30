@@ -32,14 +32,12 @@ $(document).ready(function(){
 			return;
 		}
 
-		// check to see if length is greater than 6
 		if (password.length < 7 ) {
-		$(".validation-div")[0].innerHTML = "Password must be greater than 6 characters";
+			$(".validation-div")[0].innerHTML = "Password must be greater than 6 characters";
 		return;
 		} 
 
 		if(!filter.test(emailaddress)) {
-
 			$(".validation-div")[0].innerHTML = "Please enter a valid email address";
 			return;
 		} 
@@ -47,8 +45,8 @@ $(document).ready(function(){
 		// change element inner HTML
 		$(".jumbo-header-account")[0].innerHTML = "Welcome Back to Z-Wave!";
 		$(".jumbo-subheader-account")[0].innerHTML = "Account Email: " + emailaddress;
-		$(".login-account")[0].innerHTML = "ACCOUNT";
-		$(".login-account-mobile")[0].innerHTML = "ACCOUNT";
+		$(".login-account")[0].innerHTML = "Account";
+		$(".login-account-mobile")[0].innerHTML = "Account";
 
 
 		// change jumbo account state

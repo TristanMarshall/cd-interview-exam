@@ -9,16 +9,11 @@ $app-dark-grey: #4e565c;
 $app-grey: #95a2aa;
 $app-light-grey: #e1eeee;
 
-$app-white-text: rgba(255, 255, 255, 0.7);
-$app-dark-text: rgba(0, 0, 0, 0.7);
-
-
 ////////////////////////////////////////////////////////
 // fonts / icons
 ////////////////////////////////////////////////////////
 
 $font-open-sans: 'Open Sans', sans-serif;
-
 
 @font-face {
   font-family: 'CD-Project-Icons';
@@ -77,9 +72,6 @@ $font-open-sans: 'Open Sans', sans-serif;
 .icon-clear:before {
   content: "\e6d5";
 }
-
-
-
 
 ////////////////////////////////////////////////////////
 // welcome overlay / dialog / overlay 
@@ -188,20 +180,20 @@ $font-open-sans: 'Open Sans', sans-serif;
 	}
 }
 
-
 ////////////////////////////////////////////////////////
 // app common element classes
 ////////////////////////////////////////////////////////
 
-// buttons
+// Buttons
 .solid-button {
-	background-color: $app-green;
 	font-family: $font-open-sans;
+	font-size: 12px;
+	background-color: $app-green;
 	color: white;
 	border: none;
 	border: 2px solid $app-green;
 	border-radius: 4px;
-	padding: 10px 15px;
+	padding: 12px 20px;
 	outline: none;
 	margin-top: 10px;
 }
@@ -213,12 +205,13 @@ $font-open-sans: 'Open Sans', sans-serif;
 
 .outline-button {
 	font-family: $font-open-sans;
+	font-size: 12px;
 	background-color: transparent;
 	color: white;
 	border: none;
 	border: 2px solid white;
 	border-radius: 4px;
-	padding: 10px 15px;
+	padding: 12px 20px;
 	outline: none;
 	margin-top: 10px;
 	margin-left: 15px;
@@ -297,7 +290,6 @@ $font-open-sans: 'Open Sans', sans-serif;
 }
 
 // arrow div
-
 .arrow-div {
 	position: relative;
 	background: $app-light-grey;
@@ -333,7 +325,7 @@ $font-open-sans: 'Open Sans', sans-serif;
   background-color: white;
 
   input {
-    height: 50px;
+    height: 62px;
     width: 90%;
     max-width: 500px;
     border: none;
@@ -348,8 +340,8 @@ $font-open-sans: 'Open Sans', sans-serif;
   	display: inline-block;
     float: right;
     font-size: 20px;
-    padding-top: 15px;
-    padding-right: 15px;
+    padding-top: 20px;
+    padding-right: 20px;
     color: $app-grey;
   }
 }
@@ -361,16 +353,26 @@ $font-open-sans: 'Open Sans', sans-serif;
 	.navbar-header {
 		background-color: white;
 
+		.hamburger {
+			padding-top: 15px;
+		}
+
 		.logo-div {
-	    padding-top: 16px;
-	    padding-left: 16px;
+			padding-top: 24px;
+	    padding-left: 0px;
 	    padding-right: 16px;
+
+	    img {
+	    	width: 120px;
+	    	padding-left: 10px;
+	    }
 		}
 
 		.navbar-toggle {
 			border: none;
 		}
 	}
+	
 	li {
 		a {
 			font-family: $font-open-sans;
@@ -438,14 +440,12 @@ $font-open-sans: 'Open Sans', sans-serif;
     background-color: #f7f7f7;
 
 	.row {
-		// background-color: red;
-		.three-part-sections {
-			// background-color: yellow;
 
+		.three-part-sections {
 
 			a {
 				text-decoration: none;
-				font-size: 11px;
+				font-size: 10px;
 				cursor: pointer;
 
 				.centering-div {
@@ -483,9 +483,6 @@ $font-open-sans: 'Open Sans', sans-serif;
 	}
 }
 
-
-
-
 @media (max-width: 767px) {
 
 	a {
@@ -518,7 +515,7 @@ $font-open-sans: 'Open Sans', sans-serif;
 	}
 
 	#expander {
-		margin-top: 14px;
+		margin-top: 13px;
 	}
 }
 
@@ -529,7 +526,7 @@ $font-open-sans: 'Open Sans', sans-serif;
 .jumbo-background {
   height: 250px;
   margin-top: -20px;
-  background-image: (linear-gradient(90deg, rgba(7, 40, 65, 0.75), rgba(7, 40, 65, 0.75)), url(../images/hero-image.png));
+  background-image: (linear-gradient(90deg, rgba(7, 40, 65, 0.75), rgba(7, 40, 65, 0.75)), url(../images/hero-images/hero-image.png));
   background-repeat: no-repeat;
  	background-position: 0% 0%;
 	position: relative;
@@ -640,27 +637,26 @@ $font-open-sans: 'Open Sans', sans-serif;
 
 	.loop-class {
 		font-family: $font-open-sans;
-		font-size: 31px;
+		font-size: 32px;
 		color: $app-dark-blue;
 		font-weight: bold;
-		&.one { font-size: 27px; }
-		&.two { font-size: 23px; }
-		&.three { font-size: 19px; }
-		&.four { font-size: 15px; }
-		&.five { font-size: 11px; }
+		&.one { font-size: 28px; }
+		&.two { font-size: 24px; }
+		&.three { font-size: 20px; }
+		&.four { font-size: 16px; }
+		&.five { font-size: 12px; }
 	}
 
 	.second-class {
-		font-size: 29px;
+		font-size: 30px;
 		color: $app-grey;
-		&.one { font-size: 25px; }
-		&.two { font-size: 21px; }
-		&.three { font-size: 17px; }
-		&.four { font-size: 13px; }
-		&.five { font-size: 9px; }
+		&.one { font-size: 26px; }
+		&.two { font-size: 22px; }
+		&.three { font-size: 18px; }
+		&.four { font-size: 14px; }
+		&.five { font-size: 10px; }
 	}
 }
-
 
 @media (max-width: 700px) {
 	width: 100%;
@@ -675,7 +671,7 @@ $font-open-sans: 'Open Sans', sans-serif;
 	font-family: $font-open-sans;
 	color: $app-grey;
 	font-size: 16px;
-  line-height: 25px;
+  line-height: 30px;
 }
 
 ////////////////////////////////////////////////////////
@@ -684,7 +680,7 @@ $font-open-sans: 'Open Sans', sans-serif;
 
 .jumbo-background-bottom {
     margin: 0 auto;
-    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/hero-image-2.png);
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/hero-images/hero-image-2.png);
     background-repeat: no-repeat;
     background-position: center;
     height: 340px;
@@ -788,7 +784,6 @@ $font-open-sans: 'Open Sans', sans-serif;
 	}
 }
 
-
 ////////////////////////////////////////////////////////
 // footer section / extended browse menu
 ////////////////////////////////////////////////////////
@@ -800,9 +795,7 @@ $font-open-sans: 'Open Sans', sans-serif;
 	box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.58);
 
 	.container {
-
 		.row {
-
 			.container-div {
 				max-width: 300px;
 				margin-bottom: 25px;
@@ -875,12 +868,6 @@ $font-open-sans: 'Open Sans', sans-serif;
 						margin-bottom: 25px;
 					}
 				}
-				
-				div {
-					.align-right {
-						// text-align: right;
-					}
-				}
 			}
 		}
 	}
@@ -900,5 +887,3 @@ $font-open-sans: 'Open Sans', sans-serif;
 		}
 	}
 }
-
-

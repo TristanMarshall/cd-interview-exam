@@ -117,13 +117,14 @@
     margin-top: 60px;
     width: 96%; } }
 .solid-button {
-  background-color: #00b151;
   font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  background-color: #00b151;
   color: white;
   border: none;
   border: 2px solid #00b151;
   border-radius: 4px;
-  padding: 10px 15px;
+  padding: 12px 20px;
   outline: none;
   margin-top: 10px; }
 
@@ -133,12 +134,13 @@
 
 .outline-button {
   font-family: "Open Sans", sans-serif;
+  font-size: 12px;
   background-color: transparent;
   color: white;
   border: none;
   border: 2px solid white;
   border-radius: 4px;
-  padding: 10px 15px;
+  padding: 12px 20px;
   outline: none;
   margin-top: 10px;
   margin-left: 15px; }
@@ -218,7 +220,7 @@
   height: auto;
   background-color: white; }
   #searchbox input {
-    height: 50px;
+    height: 62px;
     width: 90%;
     max-width: 500px;
     border: none;
@@ -231,8 +233,8 @@
     display: inline-block;
     float: right;
     font-size: 20px;
-    padding-top: 15px;
-    padding-right: 15px;
+    padding-top: 20px;
+    padding-right: 20px;
     color: #95a2aa; }
 
 .nav-styles {
@@ -240,10 +242,15 @@
   background-color: white; }
   .nav-styles .navbar-header {
     background-color: white; }
+    .nav-styles .navbar-header .hamburger {
+      padding-top: 15px; }
     .nav-styles .navbar-header .logo-div {
-      padding-top: 16px;
-      padding-left: 16px;
+      padding-top: 24px;
+      padding-left: 0px;
       padding-right: 16px; }
+      .nav-styles .navbar-header .logo-div img {
+        width: 120px;
+        padding-left: 10px; }
     .nav-styles .navbar-header .navbar-toggle {
       border: none; }
   .nav-styles li a {
@@ -294,7 +301,7 @@
   background-color: #f7f7f7; }
   .three-part-nav .row .three-part-sections a {
     text-decoration: none;
-    font-size: 11px;
+    font-size: 10px;
     cursor: pointer; }
     .three-part-nav .row .three-part-sections a .centering-div {
       max-width: 70px;
@@ -337,11 +344,11 @@
     display: block; }
 
   #expander {
-    margin-top: 14px; } }
+    margin-top: 13px; } }
 .jumbo-background {
   height: 250px;
   margin-top: -20px;
-  background-image: linear-gradient(90deg, rgba(7, 40, 65, 0.75), rgba(7, 40, 65, 0.75)), url(../images/hero-image.png);
+  background-image: linear-gradient(90deg, rgba(7, 40, 65, 0.75), rgba(7, 40, 65, 0.75)), url(../images/hero-images/hero-image.png);
   background-repeat: no-repeat;
   background-position: 0% 0%;
   position: relative; }
@@ -419,32 +426,32 @@
 
 .loop-container .loop-class {
   font-family: "Open Sans", sans-serif;
-  font-size: 31px;
+  font-size: 32px;
   color: #013a60;
   font-weight: bold; }
   .loop-container .loop-class.one {
-    font-size: 27px; }
+    font-size: 28px; }
   .loop-container .loop-class.two {
-    font-size: 23px; }
+    font-size: 24px; }
   .loop-container .loop-class.three {
-    font-size: 19px; }
+    font-size: 20px; }
   .loop-container .loop-class.four {
-    font-size: 15px; }
+    font-size: 16px; }
   .loop-container .loop-class.five {
-    font-size: 11px; }
+    font-size: 12px; }
 .loop-container .second-class {
-  font-size: 29px;
+  font-size: 30px;
   color: #95a2aa; }
   .loop-container .second-class.one {
-    font-size: 25px; }
+    font-size: 26px; }
   .loop-container .second-class.two {
-    font-size: 21px; }
+    font-size: 22px; }
   .loop-container .second-class.three {
-    font-size: 17px; }
+    font-size: 18px; }
   .loop-container .second-class.four {
-    font-size: 13px; }
+    font-size: 14px; }
   .loop-container .second-class.five {
-    font-size: 9px; }
+    font-size: 10px; }
 
 @media (max-width: 700px) {
   width: 100%;
@@ -453,11 +460,11 @@
   font-family: "Open Sans", sans-serif;
   color: #95a2aa;
   font-size: 16px;
-  line-height: 25px; }
+  line-height: 30px; }
 
 .jumbo-background-bottom {
   margin: 0 auto;
-  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/hero-image-2.png);
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/hero-images/hero-image-2.png);
   background-repeat: no-repeat;
   background-position: center;
   height: 340px; }
