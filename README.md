@@ -52,5 +52,4 @@ say “Account” and outputs the stored email address on the page.
 * “Browse” mega menu and for the toggled state of the site search
 ![alt image](/images/readme-images/screen-shot-dropdown-search.png)
 
-
 ###### This application was created by Tristan Marshall
