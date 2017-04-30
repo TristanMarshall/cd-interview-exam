@@ -248,16 +248,15 @@
       border: none; }
   .nav-styles li a {
     font-family: "Open Sans", sans-serif;
-    font-size: 12px;
+    font-size: 11px;
     color: #013a60;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 20px 16px !important;
     line-height: 0px; }
     .nav-styles li a span {
       font-weight: bold; }
     .nav-styles li a div {
       font-family: "Open Sans", sans-serif;
-      font-size: 12px;
+      font-size: 11px;
       font-weight: bold;
       display: inline-block;
       margin: 0;
@@ -277,8 +276,8 @@
     height: 13px;
     width: 1px;
     background-color: #e1eeee;
-    padding-top: 30px;
-    margin-top: 11px; }
+    padding-top: 25px;
+    margin-top: 18px; }
 
 #expander {
   position: absolute;

@@ -374,10 +374,9 @@ $font-open-sans: 'Open Sans', sans-serif;
 	li {
 		a {
 			font-family: $font-open-sans;
-			font-size: 12px;
+			font-size: 11px;
 			color: $app-dark-blue;
-			padding-left: 20px;
-			padding-right: 20px;
+			padding: 20px 16px !important;
 			line-height: 0px;
 
 			span {
@@ -386,36 +385,14 @@ $font-open-sans: 'Open Sans', sans-serif;
 
 			div {
 				font-family: $font-open-sans;
-				font-size: 12px;
+				font-size: 11px;
 				font-weight: bold;
 				display: inline-block;
 				margin: 0;
 				padding: 0;
 				padding-left: 23px;
-
-				// .arrow-div {
-				// 	position: relative;
-				// 	background: $app-light-grey;
-				// }
-
-				// .arrow-div:after {
-				// 	right: 100%;
-				// 	top: 50%;
-				// 	border: solid transparent;
-				// 	content: " ";
-				// 	height: 0;
-				// 	width: 0;
-				// 	position: absolute;
-				// 	pointer-events: none;
-				// 	border-color: rgba(136, 183, 213, 0);
-				// 	border-right-color: $app-light-grey;
-				// 	border-width: 4px;
-				// 	margin-top: -4px;
-				// 	margin-left: 12px;
-			 //    padding-left: 7px;
-			 //    padding-right: 10px;
-				// }
 			}
+
 			div.arrow-div {
 				padding-left: 7px;
     		padding-right: 7px;
@@ -440,8 +417,8 @@ $font-open-sans: 'Open Sans', sans-serif;
     height: 13px;
     width: 1px;
     background-color: $app-light-grey;
-    padding-top: 30px;
-    margin-top: 11px;
+		padding-top: 25px;
+    margin-top: 18px;
 	}
 }
 
