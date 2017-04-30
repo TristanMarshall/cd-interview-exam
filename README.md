@@ -1,6 +1,6 @@
 ## Developer Interview Exam
 
-##### This is the readme.md file for the Developer Interview Exam for C.D.
+##### This is the readme.md file for the Developer Interview Exam for C.D. To view project, pull down this repository to your local machine & open index.html in your browser.
 
 ### Instructions
 
@@ -26,11 +26,6 @@ Upon successful validation simulate a form submission that stores the email
 address into local storage, refreshes the local site, updates the log in button to
 say “Account” and outputs the stored email address on the page.
 
-
-##### Interview Exam allows the user to do the following:
-* 
-* 
-
 ## Technologies used:
 
 * HTML5
@@ -41,29 +36,9 @@ say “Account” and outputs the stored email address on the page.
 * jQuery
 
 
-*Google Fonts used on this website ()*
+* Desktop & Mobile Screenshots
+![alt image](../images/readme-images/screen-shot-desktop-mobile.jpg)
 
 
-<!-- ## The site includes 7 .erb pages:
-![alt image](http://i.imgur.com/EGUJvrv.jpg)
-* Layout (layouts/application.html.erb)
-
-![alt image](http://i.imgur.com/orKrlSC.jpg)
-* Signup (users/new.html.erb)
-
-![alt image](http://i.imgur.com/y3SvqyW.jpg)
-* Login (sessions/new.html.erb)
-
-![alt image](http://i.imgur.com/jI7Hea8.png)
-* Home (home/index.html.erb)
-
-![alt image](http://i.imgur.com/BzPOPIb.jpg)
-* New (home/new.html.erb)
-
-![alt image](http://i.imgur.com/I8KkiYD.png)
-* Create (home/create.html.erb)
-
-![alt image](http://i.imgur.com/k809xeF.png)
-* Delete (home/delete.html.erb) -->
 
 ###### This application was created by Tristan Marshall
