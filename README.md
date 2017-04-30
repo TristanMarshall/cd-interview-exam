@@ -44,12 +44,12 @@
  ![alt image](/images/readme-images/screen-shot-dialog.png)		
  		
  * User lightbox logn dialog validation 		
- ![alt image](/images/readme-images/screen-shot-validation.png)		
+ ![alt image](/images/readme-images/screen-shot-validation.jpg)		
  		
  * Site "Account" State / Output of stored email address		
  ![alt image](/images/readme-images/screen-shot-loggedin.png)		
  		
- * “Browse” mega menu and for the toggled state of the site search		
+ * “Browse” mega menu / Toggled state of the site search		
  ![alt image](/images/readme-images/screen-shot-dropdown-search.png)		
  		
- ###### This application was created by Tristan Marshall
+ ###### Author: Tristan Marshall
