@@ -42,5 +42,8 @@ say “Account” and outputs the stored email address on the page.
 * User lightbox login dialog 
 ![alt image](/images/readme-images/screen-shot-dialog.png)
 
+* Site "Account" State / Output of stored email address
+![alt image](/images/readme-images/screen-shot-loggedin.png)
+
 
 ###### This application was created by Tristan Marshall
