@@ -37,7 +37,7 @@ say “Account” and outputs the stored email address on the page.
 
 
 * Desktop & Mobile Screenshots
-![alt image](../images/readme-images/screen-shot-desktop-mobile.jpg)
+![alt image](/images/readme-images/screen-shot-desktop-mobile.jpg)
 
 
 
