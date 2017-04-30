@@ -60,6 +60,4 @@ $(document).ready(function(){
 		$("#dialogoverlay").fadeToggle( "slow", function() {
 		});
 	});
-
-
 });

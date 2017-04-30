@@ -4,10 +4,7 @@ $(document).ready(function(){
 	$(".dialog-overlay").removeClass("hidden");
 	$("#expander").hide();
 	$("#searchbox").hide();
-
-
 	$('.welcome-overlay').delay(1000).fadeOut(1000);
-
 
 	// set string variable for loop
 	var looptext = "One Morning, When Gregor Samsa Woke";
