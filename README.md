@@ -30,7 +30,7 @@ say “Account” and outputs the stored email address on the page.
 
 * HTML5
 * CSS
-* SASS
+* SCSS
 * Bootstrap
 * JavaScript
 * jQuery
@@ -39,6 +39,14 @@ say “Account” and outputs the stored email address on the page.
 * Desktop & Mobile Screenshots
 ![alt image](/images/readme-images/screen-shot-desktop-mobile.jpg)
 
+* User lightbox login dialog 
+![alt image](/images/readme-images/screen-shot-dialog.png)
+
+* Site "Account" State / Output of stored email address
+![alt image](/images/readme-images/screen-shot-loggedin.png)
+
+* “Browse” mega menu and for the toggled state of the site search
+![alt image](/images/readme-images/screen-shot-dropdown-search.png)
 
 
 ###### This application was created by Tristan Marshall
