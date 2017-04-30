@@ -1,8 +1,10 @@
 $(document).ready(function(){
 
-	$( "#dialogoverlay").hide();
-	$( "#expander" ).hide();
-	$( "#searchbox" ).hide();
+	$("#dialogoverlay").hide();
+	$(".dialog-overlay").removeClass("hidden");
+	$("#expander").hide();
+	$("#searchbox").hide();
+
 
 	$('.welcome-overlay').delay(1000).fadeOut(1000);
 

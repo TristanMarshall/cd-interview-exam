@@ -461,12 +461,47 @@ $font-open-sans: 'Open Sans', sans-serif;
 		padding-top: 10px;
     padding-bottom: 10px;
     margin-top: -20px;
-    background-color: #f7f7f7;
+    // background-color: #f7f7f7;
 
 	.row {
-
+		// background-color: red;
 		.three-part-sections {
+			// background-color: yellow;
 
+
+			a {
+				text-decoration: none;
+
+				.centering-div {
+				  max-width: 70px;
+    			margin: 0 auto;
+
+					.icon-menu, .icon-account-circle, .icon-shopping-cart2 {
+						padding-right: 100px;
+					}
+
+					.icon-account-circle:before {
+						font-size: 19px;
+					}
+
+					.icon-shopping-cart2:before {
+						font-size: 18px;
+					}
+
+					.name-div {
+						font-family: $font-open-sans;
+						max-width: 135px;
+						text-align: right;
+					}
+
+					.arrow-div {
+						font-family: $font-open-sans;
+						width: 20px;
+	  				margin-left: 30px;
+	  				padding: 0px 4px 0px 4px;
+					}
+				}
+			}
 		}
 	}
 }
@@ -478,6 +513,12 @@ $font-open-sans: 'Open Sans', sans-serif;
 
 	a {
 		text-align: center;
+	}
+
+	li {
+		a.icon-search {
+			padding-right: 15px;
+		}
 	}
 
 	a:hover {

@@ -5,6 +5,7 @@ $(document).ready(function(){
 
 	// Set header login state to "login" on ready
 	$(".login-account")[0].innerHTML = "LOGIN";
+	$(".login-account-mobile")[0].innerHTML = "LOGIN";
 
 	// Close dialog
 	$("#cancelLogin").click(function() {
@@ -47,6 +48,8 @@ $(document).ready(function(){
 		$(".jumbo-header-account")[0].innerHTML = "Welcome Back to Z-Wave!";
 		$(".jumbo-subheader-account")[0].innerHTML = "Account Email: " + emailaddress;
 		$(".login-account")[0].innerHTML = "ACCOUNT";
+		$(".login-account-mobile")[0].innerHTML = "ACCOUNT";
+
 
 		// change jumbo account state
 		$(".jumbo-inner-container").hide();

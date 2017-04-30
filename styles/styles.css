@@ -291,12 +291,34 @@
   display: none;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin-top: -20px;
-  background-color: #f7f7f7; }
+  margin-top: -20px; }
+  .three-part-nav .row .three-part-sections a {
+    text-decoration: none; }
+    .three-part-nav .row .three-part-sections a .centering-div {
+      max-width: 70px;
+      margin: 0 auto; }
+      .three-part-nav .row .three-part-sections a .centering-div .icon-menu, .three-part-nav .row .three-part-sections a .centering-div .icon-account-circle, .three-part-nav .row .three-part-sections a .centering-div .icon-shopping-cart2 {
+        padding-right: 100px; }
+      .three-part-nav .row .three-part-sections a .centering-div .icon-account-circle:before {
+        font-size: 19px; }
+      .three-part-nav .row .three-part-sections a .centering-div .icon-shopping-cart2:before {
+        font-size: 18px; }
+      .three-part-nav .row .three-part-sections a .centering-div .name-div {
+        font-family: "Open Sans", sans-serif;
+        max-width: 135px;
+        text-align: right; }
+      .three-part-nav .row .three-part-sections a .centering-div .arrow-div {
+        font-family: "Open Sans", sans-serif;
+        width: 20px;
+        margin-left: 30px;
+        padding: 0px 4px 0px 4px; }
 
 @media (max-width: 767px) {
   a {
     text-align: center; }
+
+  li a.icon-search {
+    padding-right: 15px; }
 
   a:hover {
     background-color: #e1eeee; }
