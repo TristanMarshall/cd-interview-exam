@@ -30,7 +30,7 @@ say “Account” and outputs the stored email address on the page.
 
 * HTML5
 * CSS
-* SASS
+* SCSS
 * Bootstrap
 * JavaScript
 * jQuery
@@ -39,6 +39,8 @@ say “Account” and outputs the stored email address on the page.
 * Desktop & Mobile Screenshots
 ![alt image](/images/readme-images/screen-shot-desktop-mobile.jpg)
 
+* User lightbox login dialog 
+![alt image](/images/readme-images/screen-shot-dialog.jpg)
 
 
 ###### This application was created by Tristan Marshall
