@@ -35,7 +35,7 @@ say “Account” and outputs the stored email address on the page.
 * JavaScript
 * jQuery
 
-
+### Screenshots of site:
 * Desktop & Mobile Screenshots
 ![alt image](/images/readme-images/screen-shot-desktop-mobile.jpg)
 
