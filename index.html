@@ -30,27 +30,49 @@
 
     <div id="dialogoverlay" class="dialog-overlay hidden">
       <div class="dialog">
-        <div class="inner-dialog">
-          <br>
-          <div>
-            Log in to Z-Wave
+        <div class="dialog-submit">
+          <div class="inner-dialog">
+            <br>
+            <div>
+              Log in to Z-Wave
+            </div>
+            <br>
+            <br>
+            <input id="emailinput" class="email-input" placeholder="Email Address" type="email">
+            <br>
+            <br>
+            <input class="password-input" id="passwordcheck" type="password" pattern=".{6,}" placeholder="Password (Minimum 7 characters)">
+            <br>
+            <div id="validationDiv" class="validation-div">
+            </div>
           </div>
-          <br>
-          <br>
-          <input id="emailinput" class="email-input" placeholder="Email Address" type="email">
-          <br>
-          <br>
-          <input class="password-input" id="passwordcheck" type="password" pattern=".{6,}" placeholder="Password (Minimum 7 characters)">
-          <br>
-          <div id="validationDiv" class="validation-div">
+          <hr>
+          <div class="bottom-div">
+            <div class="cancel" id="cancelLogin">CANCEL</div>
+            <div class="submit" id="submitLogin">SUBMIT</div>
           </div>
         </div>
-        <hr>
-        <div class="bottom-div">
-          <div class="cancel" id="cancelLogin">CANCEL</div>
-          <div class="submit" id="submitLogin">SUBMIT</div>
+
+        <div class="dialog-success">
+          <div class="inner-dialog">
+            <div>
+              <hr>
+              <br>
+              <img style="width: 100px;" src="images/site-images/check-mark.png">
+            </div>
+            <br>
+            <br>
+            <div>
+              Log in Successful
+            </div>
+            <br>
+            <br>
+            <hr class="bottom-line">
+          </div>
         </div>
+
       </div>
+
     </div>
 
 <!-- //////////////////////////////////////////////////////// -->

@@ -63,7 +63,7 @@
   position: absolute;
   z-index: 2;
   background-color: rgba(0, 0, 0, 0.32); }
-  .dialog-overlay .dialog {
+  .dialog-overlay .dialog, .dialog-overlay .dialog-success {
     width: 100%;
     max-width: 350px;
     height: auto;
@@ -72,15 +72,15 @@
     z-index: 10;
     background: white;
     box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.34); }
-    .dialog-overlay .dialog .inner-dialog {
+    .dialog-overlay .dialog .inner-dialog, .dialog-overlay .dialog-success .inner-dialog {
       padding: 30px 30px 0px 30px;
       text-align: center; }
-      .dialog-overlay .dialog .inner-dialog div {
+      .dialog-overlay .dialog .inner-dialog div, .dialog-overlay .dialog-success .inner-dialog div {
         font-family: "Open Sans", sans-serif;
         font-size: 22px;
         font-weight: bold;
         color: #013a60; }
-      .dialog-overlay .dialog .inner-dialog input {
+      .dialog-overlay .dialog .inner-dialog input, .dialog-overlay .dialog-success .inner-dialog input {
         width: 100%;
         padding: 10px 10px;
         border: 1px solid #e1eeee;
@@ -88,25 +88,27 @@
         border-radius: 2px;
         font-family: "Open Sans", sans-serif;
         outline: none; }
-      .dialog-overlay .dialog .inner-dialog .validation-div {
+      .dialog-overlay .dialog .inner-dialog .validation-div, .dialog-overlay .dialog-success .inner-dialog .validation-div {
         font-size: 12px;
         min-height: 20px;
         height: auto;
         color: tomato;
         margin-top: 15px;
         margin-bottom: 15px; }
-    .dialog-overlay .dialog hr {
+      .dialog-overlay .dialog .inner-dialog .bottom-line, .dialog-overlay .dialog-success .inner-dialog .bottom-line {
+        padding-bottom: 30px; }
+    .dialog-overlay .dialog hr, .dialog-overlay .dialog-success hr {
       margin: 0; }
-    .dialog-overlay .dialog .bottom-div {
+    .dialog-overlay .dialog .bottom-div, .dialog-overlay .dialog-success .bottom-div {
       padding: 15px 20px 15px 15px;
       text-align: right; }
-      .dialog-overlay .dialog .bottom-div .cancel {
+      .dialog-overlay .dialog .bottom-div .cancel, .dialog-overlay .dialog-success .bottom-div .cancel {
         display: inline-block;
         color: tomato;
         padding-right: 25px;
         font-weight: bold;
         cursor: pointer; }
-      .dialog-overlay .dialog .bottom-div .submit {
+      .dialog-overlay .dialog .bottom-div .submit, .dialog-overlay .dialog-success .bottom-div .submit {
         display: inline-block;
         color: #008bd3;
         font-weight: bold;

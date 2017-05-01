@@ -103,10 +103,11 @@ $font-open-sans: 'Open Sans', sans-serif;
   z-index: 2;
   background-color: rgba(0, 0, 0, 0.32);
 
-	.dialog {
+	.dialog, .dialog-success {
 		width: 100%;
     max-width: 350px;
     height: auto;
+    // min-height: 325px;
     margin: 0 auto;
     margin-top: 150px;
     z-index: 10;
@@ -141,6 +142,10 @@ $font-open-sans: 'Open Sans', sans-serif;
 		    color: tomato;
 		    margin-top: 15px;
     		margin-bottom: 15px;
+	    }
+
+	    .bottom-line {
+	    	padding-bottom: 30px;
 	    }
     }
 
@@ -244,24 +249,24 @@ $font-open-sans: 'Open Sans', sans-serif;
 }
 
 @media (min-width: 515px) {
-.col-sm-for5 {
-      width: 33.3%;
-      float: left;
-    }
+	.col-sm-for5 {
+    width: 33.3%;
+    float: left;
+  }
 }
 
 @media (min-width: 992px) {
-    .col-md-for5 {
-      width: 20%;
-      float: left;
-    }
+  .col-md-for5 {
+    width: 20%;
+    float: left;
+  }
 }
 
 @media (min-width: 1200px) {
-    .col-lg-for5 {
-      width: 20%;
-      float: left;
-    }
+  .col-lg-for5 {
+    width: 20%;
+    float: left;
+  }
 }
 
 // show/hide

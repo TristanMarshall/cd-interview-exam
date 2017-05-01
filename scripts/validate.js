@@ -2,6 +2,8 @@ $(document).ready(function(){
 
 	// hide account state
 	$(".jumbo-inner-container-account").hide();
+	$(".dialog-success").hide();
+
 
 	// Set header login state to "login" on ready
 	$(".login-account")[0].innerHTML = "LOG IN";
@@ -42,6 +44,10 @@ $(document).ready(function(){
 			return;
 		} 
 
+		// change dialog state to success
+		$(".dialog-submit").hide();
+		$(".dialog-success").show();
+
 		// change element inner HTML
 		$(".jumbo-header-account")[0].innerHTML = "Welcome Back to Z-Wave!";
 		$(".jumbo-subheader-account")[0].innerHTML = "Account Email: " + emailaddress;
@@ -57,7 +63,7 @@ $(document).ready(function(){
 		$(".validation-div")[0].innerHTML = "";
 		$(".email-input").val("");
 		$(".password-input").val("");
-		$("#dialogoverlay").fadeToggle( "slow", function() {
+		$("#dialogoverlay").delay(750).fadeToggle( "slow", function() {
 		});
 	});
 });

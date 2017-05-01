@@ -68,6 +68,9 @@ $(document).ready(function(){
 
 		// Toggle dialog
 		$(".dialogtrigger").click(function() {
+			//reset dialog state
+			$(".dialog-success").hide();
+			$(".dialog-submit").show();
 			$("#dialogoverlay").fadeToggle( "slow", function() {
 			});
 		});
